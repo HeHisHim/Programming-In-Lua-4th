@@ -1,0 +1,12 @@
+-- math.maxinteger * 2
+-- print(math.maxinteger)
+-- math.maxinteger == 9223372036854775807
+-- math.maxinteger * 2 == math.maxinteger + math.maxinteger = (math.maxinteger + 1) + (math.maxinteger - 1)
+-- math.maxinteger + 1 == math.mininteger == -9223372036854775808
+-- math.maxinteger * 2 == -9223372036854775808 + 9223372036854775806 == -2
+
+-- math.mininteger * 2
+-- math.mininteger == 0x8000000000000000
+-- math.mininteger * 2 == math.mininteger + math.mininteger == 0x8000000000000000 + 0x8000000000000000
+--  == 0x 1 0 000000000000000 -- 高位截断 1
+-- math.mininteger * 2 == 0x0000000000000000 == 0
