@@ -36,12 +36,12 @@ function sortFileWords(...)
         for line in io.lines() do
             dealStream(line)
         end
-    else if (file and not target) then
+    else if (file and not target) then -- 第二种情况
         pFile = assert(io.open(file, "r"))
         for line in pFile:lines() do
             dealStream(line)
         end
-    else if (file and target) then
+    else if (file and target) then -- 第三种情况
         pFile = assert(io.open(file, "r"))
         tFile = assert(io.open(target, "w"))
         for line in pFile:lines() do
