@@ -1,7 +1,1 @@
-function foo(...)
-    if condition then
-        -- body
-    end
-end
-
-foo("abc", "sadf")
+print(os.execute("cd /Users/macbook"))
