@@ -1,3 +1,5 @@
 https://blog.csdn.net/belous_zxy/article/list/2?
 
 不要在table里面 置元素为 nil, 要移除元素用remove
+
+lua将所有不是false和nil的值当作真, 特别的, 将0和空字符串也当作真
