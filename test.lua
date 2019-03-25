@@ -1,5 +1,9 @@
-t = {10, 20, x = 2, k = "hi"}
+lib = {}
 
-for key, value in pairs(t) do
-    print(key, value)
-end
+lib.foo = function (x, y) return x + y end
+lib.goo = function (x, y) return x - y end
+lib.hoo = function (x, y) return x == y end
+
+print(lib.foo(1, 2))
+print(lib.goo(2, 3))
+print(lib.hoo(2, 2))
