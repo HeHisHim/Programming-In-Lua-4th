@@ -10,7 +10,7 @@ function pushHead(dList, value)
 end
 
 function pushBack(dList, value)
-    dList.last = dList.last + 1 -- 从尾部加入则last += 1, 第一个尾元素从 索引1 开始
+    dList.last = dList.last + 1 -- 从尾部加入则last += 1, 第一个尾元素从 索引0 开始
     dList[dList.last] = value
 end
 
